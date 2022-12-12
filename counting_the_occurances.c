@@ -8,11 +8,15 @@ int main()
     scanf("%s",&s2);
     for(int i=0;s[i]!=NULL;i++)
     {
-        if(s[i]==s2)
-            c++;
+        if(s2==s[i])
+        c++;
     }
-    if(c!=0)
-        printf("%d",c);
-    else
+    if(c==0)
+    {
         printf("-1");
+    }
+    else
+    {
+    printf("%d",c);
+}
 }
